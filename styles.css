@@ -1,0 +1,37 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, [col] 33%);
+    grid-template-rows: repeat(1, [row] auto);
+    background-color: black;
+    margin-top: 0vh;
+   /* margin-bottom: 1em; */
+  }
+
+  .ship_image {
+    grid-column: col / span 2;
+    grid-row: row;
+  }
+ h1{
+     color: white;
+     font-size: 4.75vh;
+ }
+  .answer {
+      color: white;
+  }
+  .words {
+      grid-column: col 3;
+      grid-row: row;
+      padding-right: 5px;
+      text-align: left;
+      color: #00ff00;
+      font-size: 2.22vh;
+      font-family: "Raleway", sans-serif;
+}
+
+  .falconlink {
+      color: white;
+  }
+
+  .enterpriselink {
+      color: white;
+  }

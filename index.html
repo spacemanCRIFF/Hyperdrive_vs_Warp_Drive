@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperdrive vs. Warp Drive</title>
+</head>
+<body>
+  <div class="grid">
+    <svg class="ship_image" width="95%" height="96vh">
+        <defs>
+          <filter id="turbulent-dissolve" x="0%" y="0%">
+          <feTurbulence type="fractalNoise" baseFrequency=".012"/>
+           <feColorMatrix type="luminanceToAlpha"/>
+           <feComponentTransfer>
+              <feFuncA type="linear" slope="0">
+                <animate attributeName="slope" values="0;0;0;0;0;0.5;1;1.5;2;2;2;2;2;2;1.5;1;0.5;0" dur="8s" repeatCount="indefinite"/>
+             </feFuncA>
+            </feComponentTransfer>
+            
+            <feComponentTransfer>
+              <feFuncA type="discrete" tableValues="0 1"/>
+            </feComponentTransfer>
+             <feGaussianBlur stdDeviation="1"/>
+            <feComposite operator="in" in="SourceGraphic" result="overlay"/>
+            
+            <feImage xlink:href="images/falcon1.png" width="800" height="600" result="underlay"/>
+            <feComposite operator="over" in="overlay" in2="underlay"/>
+          </filter>
+          </defs>
+          <image filter="url(#turbulent-dissolve)" width="800" height="600" xlink:href="images/enterprise1.jpg"/>
+      </svg>
+      <div class="words"><h1><a class="falconlink" href="index1.html"><span>Hyperdrive</span></a> vs.
+      <a class="enterpriselink" href="index2.html"><span>Warp Drive</span></a>:</h1>
+      <p>So what is the difference between a hyperdrive and a warp drive?<br>  
+      <br><span class="answer">Answer:</span>  You can't even really compare the two. 
+      A Hyperdrive allows you to travel around the galaxy in a matter of days whereas transit by warp drive takes decades, requiring 
+      numerous refueling operations along the way. However, the disparity between the two technologies stems more from the 
+      style of the two franchises than anything else: Star Wars is an action saga, and people needed to get places fast. The 
+      Millennium Falcon still manages to fly from Hoth to Bespin in the Empire Strikes Back even without its hyperdrive. 
+      Star Trek on the other hand, is a cerebral, slow, nerdy, and mostly serious franchise where the believe-ability of the 
+      technology and science is an important part of the show. The warp drive is limited because it actually could exist under 
+      our current understanding of physics. So while hyperdrives in star wars are infinitely more powrfull than warp drives in 
+      star trek, the comparison is a essentially a nonsensical one.<br> 
+      <br><a class="falconlink" href="index1.html"><span>Hyperdrive:</span></a>  Usually involves the ship “dropping” into subspace, or some dimensional variation wherein the distance between 
+      stars is greatly reduced and speed is increased, although the ship never actually travels faster than the speed of light, persay. 
+      Note: this is not wormhole travel, that is a different phenomena entirely. Within the dimension of hyperspace the laws of physics 
+      are different, so ships can move over a greater distance with seemingly more speed, often by shortening the actual distance itself, then 
+      exiting back to the corresponding place in real time/space upon arrival.<br>
+      <br><a class="enterpriselink" href="index2.html"><span>Warp Drive:</span></a>  This type of drive physically warps space/time in such a fashion as to produce propulsion 
+      that moves the ship at translight speeds relative to the universe at large. A warp drive literally bends space around a ship 
+      to allow it to effectively cross distances faster.
+      </p></div>
+  </div>
+        <style>
+            body {
+             background: black;
+            }
+        </style>
+</body>
+</html>
