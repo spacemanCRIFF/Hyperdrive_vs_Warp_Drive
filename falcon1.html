@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+      crossorigin="anonymous" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +11,45 @@
 </head>
 <body>
 <img class="centered" src="images/falconbp1.jpg" alt="Center Images" />
+<footer class="footer">
+    <a class="lfArrow" href="enterprise3.html"><i class="fas fa-angle-left"></i></a>
+    <a class="rtArrow" href="falcon2.html"><i class="fas fa-angle-right"></i></a>
+</footer>
 </body>
 <style>
     body {
-        background-color: black;
-    }
-    img.centered {
+       display: flex;
+       background-color: black;
+       position: relative;
+   }
+   img.centered {
         height: 97vh;
+        width: 67vw;
         display: block;
         margin-left: auto;
         margin-right: auto 
-    }
-</style
+   }
+   footer {
+       margin: 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       -ms-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+       width: 100%;
+   }
+   .footer {
+       text-align: center;
+   }
+   .lfArrow {
+       font-size: 5vh;
+       padding-right: 42vw;
+       color: white;
+   }
+   .rtArrow {
+       font-size: 5vh;
+       padding-left: 42vw;
+       color: white;
+   }
+</style>
 </html>
